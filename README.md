@@ -31,7 +31,7 @@ This repository documents my progress as I learn Machine Learning from the groun
 
 ### Week 1: Python for ML & Data Analysis
 
-* [ ] Day 1 - Introduction to Machine Learning
+* [x] Day 1 - Introduction to Machine Learning
 * [ ] Day 2 - NumPy Basics
 * [ ] Day 3 - NumPy Operations
 * [ ] Day 4 - Pandas Fundamentals
