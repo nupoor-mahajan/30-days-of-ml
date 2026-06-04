@@ -7,51 +7,51 @@
 - [x] Importing NumPy
 
 ## 2. Creating Arrays
-- [ ] np.array()
-- [ ] 1D Arrays
-- [ ] 2D Arrays
-- [ ] 3D Arrays
-- [ ] Array dimensions (ndim)
-- [ ] Array shape
-- [ ] Array datatype (dtype)
+- [x] np.array()
+- [x] 1D Arrays
+- [x] 2D Arrays
+- [x] 3D Arrays
+- [x] Array dimensions (ndim)
+- [x] Array shape
+- [x] Array datatype (dtype)
 
 ## 3. Special Arrays
-- [ ] np.zeros()
-- [ ] np.ones()
-- [ ] np.empty()
-- [ ] np.full()
-- [ ] np.eye()
-- [ ] np.arange()
-- [ ] np.linspace()
-- [ ] Random arrays
+- [x] np.zeros()
+- [x] np.ones()
+- [x] np.empty()
+- [x] np.full()
+- [x] np.eye()
+- [x] np.arange()
+- [x] np.linspace()
+- [x] Random arrays
 
 ## 4. Array Attributes
-- [ ] shape
-- [ ] size
-- [ ] ndim
-- [ ] dtype
-- [ ] itemsize
+- [x] shape
+- [x] size
+- [x] ndim
+- [x] dtype
+- [x] itemsize
 
 ## 5. Indexing & Slicing
-- [ ] Accessing elements
-- [ ] Negative indexing
-- [ ] Slicing arrays
-- [ ] Multi-dimensional indexing
-- [ ] Boolean indexing
-- [ ] Fancy indexing
+- [x] Accessing elements
+- [x] Negative indexing
+- [x] Slicing arrays
+- [x] Multi-dimensional indexing
+- [x] Boolean indexing
+- [x] Fancy indexing
 
 ## 6. Array Operations
-- [ ] Addition
-- [ ] Subtraction
-- [ ] Multiplication
-- [ ] Division
-- [ ] Power operations
-- [ ] Modulus
+- [x] Addition
+- [x] Subtraction
+- [x] Multiplication
+- [x] Division
+- [x] Power operations
+- [x] Modulus
 
 ## 7. Broadcasting
-- [ ] Broadcasting concept
-- [ ] Broadcasting rules
-- [ ] Broadcasting examples
+- [x] Broadcasting concept
+- [x] Broadcasting rules
+- [x] Broadcasting examples
 
 ## 8. Mathematical Functions
 - [ ] np.sum()
