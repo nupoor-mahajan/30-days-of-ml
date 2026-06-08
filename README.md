@@ -37,7 +37,7 @@ This repository documents my progress as I learn Machine Learning from the groun
 * [x] Day 4 - Pandas Fundamentals
 * [x] Day 5 - Data Cleaning
 * [x] Day 6 - Data Visualization
-* [ ] Day 7 - Mini Project
+* [x] Day 7 - Mini Project
 
 ### Week 2: Core Machine Learning
 
@@ -76,9 +76,11 @@ This repository documents my progress as I learn Machine Learning from the groun
 ## 📂 Repository Structure
 
 ```text
-Day01/
-Day02/
-Day03/
+Week1/
+ |
+ -Day01/
+ -Day02/
+ -Day03/
 ...
 Projects/
 Datasets/
