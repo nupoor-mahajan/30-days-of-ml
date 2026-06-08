@@ -33,10 +33,10 @@ This repository documents my progress as I learn Machine Learning from the groun
 
 * [x] Day 1 - Introduction to Machine Learning
 * [x] Day 2 - NumPy Basics
-* [ ] Day 3 - NumPy Operations
-* [ ] Day 4 - Pandas Fundamentals
-* [ ] Day 5 - Data Cleaning
-* [ ] Day 6 - Data Visualization
+* [x] Day 3 - NumPy Operations
+* [x] Day 4 - Pandas Fundamentals
+* [x] Day 5 - Data Cleaning
+* [x] Day 6 - Data Visualization
 * [ ] Day 7 - Mini Project
 
 ### Week 2: Core Machine Learning
