@@ -91,15 +91,7 @@ Output:
 The NumPy approach is shorter, cleaner, and significantly faster for large datasets.
 
 ---
-## Summary
 
-* NumPy stands for Numerical Python.
-* It is the core library for numerical computing in Python.
-* NumPy provides efficient multi-dimensional arrays and mathematical functions.
-* It is widely used in Data Science, Machine Learning, and Artificial Intelligence.
-* NumPy is fast because it uses optimized C and Fortran implementations underneath Python.
-
----
 # 2. Creating Arrays
 
 NumPy arrays are created using the `np.array()` function. Arrays can be one-dimensional, two-dimensional, or multi-dimensional depending on the structure of the data provided.
@@ -269,18 +261,6 @@ float64
 
 ---
 
-## Summary
-
-| Attribute    | Purpose                                        |
-| ------------ | ---------------------------------------------- |
-| `np.array()` | Creates a NumPy array                          |
-| `ndim`       | Returns number of dimensions                   |
-| `shape`      | Returns array dimensions (rows, columns, etc.) |
-| `dtype`      | Returns data type of array elements            |
-
-These are the fundamental concepts required before learning array operations, indexing, slicing, and broadcasting in NumPy.
-
----
 # 3. Special Arrays
 
 NumPy provides several built-in functions to quickly create arrays with specific values or patterns.
@@ -487,23 +467,6 @@ Example Output:
 
 ---
 
-## Summary
-
-| Function              | Purpose                                       |
-| --------------------- | --------------------------------------------- |
-| `np.zeros()`          | Creates an array filled with zeros            |
-| `np.ones()`           | Creates an array filled with ones             |
-| `np.empty()`          | Creates an uninitialized array                |
-| `np.full()`           | Creates an array filled with a specific value |
-| `np.eye()`            | Creates an identity matrix                    |
-| `np.arange()`         | Creates values within a range                 |
-| `np.linspace()`       | Creates evenly spaced values                  |
-| `np.random.rand()`    | Random values between 0 and 1                 |
-| `np.random.randint()` | Random integers in a range                    |
-| `np.random.randn()`   | Random values from normal distribution        |
-
-These special array creation functions are widely used in Data Science, Machine Learning, and numerical computing to quickly generate datasets and matrices.
-
 # 5. Indexing & Slicing
 
 Indexing and slicing allow us to access, modify, and extract specific elements from NumPy arrays.
@@ -675,19 +638,6 @@ Output:
 
 ---
 
-## Summary
-
-| Method           | Purpose                 |
-| ---------------- | ----------------------- |
-| `arr[index]`     | Access a single element |
-| `arr[-1]`        | Access from the end     |
-| `arr[start:end]` | Slice an array          |
-| `arr[row, col]`  | Access 2D elements      |
-| `arr[condition]` | Boolean indexing        |
-| `arr[[indices]]` | Fancy indexing          |
-
----
-
 # 6. Array Operations
 
 NumPy supports element-wise mathematical operations directly on arrays.
@@ -843,20 +793,6 @@ Output:
 
 ---
 
-## Summary
-
-| Operation      | Example  |
-| -------------- | -------- |
-| Addition       | `a + b`  |
-| Subtraction    | `a - b`  |
-| Multiplication | `a * b`  |
-| Division       | `a / b`  |
-| Power          | `a ** 2` |
-| Modulus        | `a % b`  |
-
-NumPy performs these operations element-wise, making numerical computations faster and more efficient than traditional Python loops.
-
----
 # 7. Broadcasting
 
 Broadcasting is a powerful NumPy feature that allows arrays of different shapes to perform arithmetic operations without explicitly reshaping them.
@@ -1088,14 +1024,916 @@ Output:
 
 ---
 
-## Summary
+# 8. Mathematical Functions
 
-| Concept      | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| Broadcasting | Allows operations between arrays of different shapes |
-| Rule 1       | Dimensions are equal                                 |
-| Rule 2       | One dimension is 1                                   |
-| Rule 3       | Otherwise broadcasting fails                         |
-| Benefit      | Faster and more memory-efficient computations        |
+NumPy provides a wide range of mathematical functions for performing statistical and numerical operations on arrays.
 
-Broadcasting is one of the most important NumPy features and is heavily used in Data Science, Machine Learning, and Deep Learning for efficient mathematical computations.
+```python
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50])
+```
+
+## np.sum()
+
+Returns the sum of all elements.
+
+```python
+np.sum(arr)
+```
+
+Output:
+
+```text
+150
+```
+
+## np.mean()
+
+Returns the average of array elements.
+
+```python
+np.mean(arr)
+```
+
+Output:
+
+```text
+30.0
+```
+
+## np.median()
+
+Returns the middle value after sorting.
+
+```python
+np.median(arr)
+```
+
+Output:
+
+```text
+30.0
+```
+
+## np.std()
+
+Returns the standard deviation.
+
+```python
+np.std(arr)
+```
+
+Output:
+
+```text
+14.1421356237
+```
+
+## np.var()
+
+Returns the variance.
+
+```python
+np.var(arr)
+```
+
+Output:
+
+```text
+200.0
+```
+
+## np.min()
+
+Returns the minimum value.
+
+```python
+np.min(arr)
+```
+
+Output:
+
+```text
+10
+```
+
+## np.max()
+
+Returns the maximum value.
+
+```python
+np.max(arr)
+```
+
+Output:
+
+```text
+50
+```
+
+## np.argmin()
+
+Returns the index of the minimum value.
+
+```python
+np.argmin(arr)
+```
+
+Output:
+
+```text
+0
+```
+
+## np.argmax()
+
+Returns the index of the maximum value.
+
+```python
+np.argmax(arr)
+```
+
+Output:
+
+```text
+4
+```
+
+---
+
+# 9. Array Manipulation
+
+Array manipulation functions help modify the structure and layout of arrays.
+
+## reshape()
+
+Changes the shape of an array without changing its data.
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+print(arr.reshape(2, 3))
+```
+
+Output:
+
+```text
+[[1 2 3]
+ [4 5 6]]
+```
+
+## flatten()
+
+Converts a multi-dimensional array into a 1D array and returns a copy.
+
+```python
+arr = np.array([[1, 2], [3, 4]])
+
+print(arr.flatten())
+```
+
+Output:
+
+```text
+[1 2 3 4]
+```
+
+## ravel()
+
+Converts a multi-dimensional array into a 1D array and returns a view whenever possible.
+
+```python
+arr.ravel()
+```
+
+Output:
+
+```text
+[1 2 3 4]
+```
+
+## transpose()
+
+Swaps rows and columns.
+
+```python
+arr = np.array([[1, 2, 3],
+                [4, 5, 6]])
+
+print(arr.transpose())
+```
+
+Output:
+
+```text
+[[1 4]
+ [2 5]
+ [3 6]]
+```
+
+## swapaxes()
+
+Interchanges specified axes.
+
+```python
+arr = np.array([
+    [[1, 2],
+     [3, 4]]
+])
+
+print(np.swapaxes(arr, 1, 2))
+```
+
+---
+
+# 10. Joining Arrays
+
+NumPy provides functions to combine multiple arrays.
+
+## concatenate()
+
+Joins arrays along an existing axis.
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(np.concatenate((a, b)))
+```
+
+Output:
+
+```text
+[1 2 3 4 5 6]
+```
+
+## stack()
+
+Stacks arrays along a new axis.
+
+```python
+print(np.stack((a, b)))
+```
+
+Output:
+
+```text
+[[1 2 3]
+ [4 5 6]]
+```
+
+## hstack()
+
+Stacks arrays horizontally.
+
+```python
+print(np.hstack((a, b)))
+```
+
+Output:
+
+```text
+[1 2 3 4 5 6]
+```
+
+## vstack()
+
+Stacks arrays vertically.
+
+```python
+print(np.vstack((a, b)))
+```
+
+Output:
+
+```text
+[[1 2 3]
+ [4 5 6]]
+```
+
+---
+
+# 11. Splitting Arrays
+
+Splitting functions divide arrays into smaller parts.
+
+## split()
+
+Splits an array into equal sections.
+
+```python
+arr = np.array([1, 2, 3, 4, 5, 6])
+
+print(np.split(arr, 3))
+```
+
+Output:
+
+```text
+[array([1, 2]), array([3, 4]), array([5, 6])]
+```
+
+## hsplit()
+
+Splits arrays horizontally.
+
+```python
+arr = np.array([[1, 2, 3, 4]])
+
+print(np.hsplit(arr, 2))
+```
+
+Output:
+
+```text
+[array([[1, 2]]), array([[3, 4]])]
+```
+
+## vsplit()
+
+Splits arrays vertically.
+
+```python
+arr = np.array([
+    [1, 2],
+    [3, 4],
+    [5, 6],
+    [7, 8]
+])
+
+print(np.vsplit(arr, 2))
+```
+
+Output:
+
+```text
+[array([[1, 2],
+       [3, 4]]),
+ array([[5, 6],
+       [7, 8]])]
+```
+
+---
+
+# 12. Searching & Sorting
+
+## where()
+
+Returns indices where a condition is true.
+
+```python
+arr = np.array([10, 20, 30, 40])
+
+print(np.where(arr > 20))
+```
+
+Output:
+
+```text
+(array([2, 3]),)
+```
+
+## sort()
+
+Returns a sorted copy of the array.
+
+```python
+arr = np.array([5, 2, 8, 1])
+
+print(np.sort(arr))
+```
+
+Output:
+
+```text
+[1 2 5 8]
+```
+
+## argsort()
+
+Returns indices that would sort the array.
+
+```python
+arr = np.array([50, 20, 80, 10])
+
+print(np.argsort(arr))
+```
+
+Output:
+
+```text
+[3 1 0 2]
+```
+
+## unique()
+
+Returns unique values.
+
+```python
+arr = np.array([1, 2, 2, 3, 3, 4])
+
+print(np.unique(arr))
+```
+
+Output:
+
+```text
+[1 2 3 4]
+```
+
+---
+
+# 13. Filtering Arrays
+
+Filtering allows selection of elements based on conditions.
+
+## Boolean Masks
+
+A Boolean mask is an array containing True and False values.
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+
+mask = arr > 25
+
+print(mask)
+```
+
+Output:
+
+```text
+[False False True True True]
+```
+
+## Conditional Filtering
+
+Use Boolean masks to filter elements.
+
+```python
+print(arr[arr > 25])
+```
+
+Output:
+
+```text
+[30 40 50]
+```
+
+Example:
+
+```python
+print(arr[arr % 2 == 0])
+```
+
+Output:
+
+```text
+[10 20 30 40 50]
+```
+
+---
+
+# 14. Random Module
+
+## np.random.rand()
+
+Generates random values between 0 and 1.
+
+```python
+np.random.rand(2, 3)
+```
+
+## np.random.randint()
+
+Generates random integers.
+
+```python
+np.random.randint(1, 10, size=(2, 3))
+```
+
+## np.random.randn()
+
+Generates values from a standard normal distribution.
+
+```python
+np.random.randn(2, 3)
+```
+
+## Random Seed
+
+Produces reproducible random results.
+
+```python
+np.random.seed(42)
+
+print(np.random.randint(1, 10, 5))
+```
+
+Output:
+
+```text
+[7 4 8 5 7]
+```
+
+---
+
+# 15. Linear Algebra
+
+Linear Algebra is one of the most important mathematical foundations of Machine Learning. NumPy provides a dedicated module, `numpy.linalg`, for performing linear algebra operations.
+
+```python
+import numpy as np
+```
+
+---
+
+## Dot Product
+
+The dot product multiplies corresponding elements and then sums the results.
+
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(np.dot(a, b))
+```
+
+Output:
+
+```text
+32
+```
+
+Calculation:
+
+```text
+(1×4) + (2×5) + (3×6)
+= 4 + 10 + 18
+= 32
+```
+
+---
+
+## Matrix Multiplication
+
+Used to multiply matrices.
+
+```python
+a = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+b = np.array([
+    [5, 6],
+    [7, 8]
+])
+
+print(np.matmul(a, b))
+```
+
+Output:
+
+```text
+[[19 22]
+ [43 50]]
+```
+
+Alternative:
+
+```python
+print(a @ b)
+```
+
+---
+
+## Transpose
+
+Swaps rows and columns.
+
+```python
+a = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+print(a.T)
+```
+
+Output:
+
+```text
+[[1 4]
+ [2 5]
+ [3 6]]
+```
+
+---
+
+## Determinant
+
+A determinant is a special value calculated from a square matrix.
+
+```python
+a = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+print(np.linalg.det(a))
+```
+
+Output:
+
+```text
+-2.0
+```
+
+---
+
+## Inverse
+
+The inverse of a matrix is similar to reciprocal for numbers.
+
+```python
+a = np.array([
+    [1, 2],
+    [3, 4]
+])
+
+print(np.linalg.inv(a))
+```
+
+Output:
+
+```text
+[[-2.   1. ]
+ [ 1.5 -0.5]]
+```
+
+---
+
+## Eigenvalues & Eigenvectors
+
+Widely used in PCA and dimensionality reduction.
+
+```python
+a = np.array([
+    [4, 2],
+    [1, 3]
+])
+
+values, vectors = np.linalg.eig(a)
+
+print(values)
+print(vectors)
+```
+
+Example Output:
+
+```text
+[5. 2.]
+```
+
+---
+
+# 16. Useful Functions
+
+These functions are commonly used while preprocessing and manipulating data.
+
+---
+
+## copy()
+
+Creates a completely independent copy of an array.
+
+```python
+arr = np.array([1, 2, 3])
+
+new_arr = arr.copy()
+
+arr[0] = 100
+
+print(arr)
+print(new_arr)
+```
+
+Output:
+
+```text
+[100   2   3]
+[1 2 3]
+```
+
+Changes in the original array do not affect the copied array.
+
+---
+
+## view()
+
+Creates a view that shares memory with the original array.
+
+```python
+arr = np.array([1, 2, 3])
+
+new_arr = arr.view()
+
+arr[0] = 100
+
+print(arr)
+print(new_arr)
+```
+
+Output:
+
+```text
+[100   2   3]
+[100   2   3]
+```
+
+Changes in one array affect the other.
+
+---
+
+## astype()
+
+Converts array elements to another data type.
+
+```python
+arr = np.array([1.1, 2.2, 3.3])
+
+print(arr.astype(int))
+```
+
+Output:
+
+```text
+[1 2 3]
+```
+
+---
+
+## clip()
+
+Limits values within a specified range.
+
+```python
+arr = np.array([5, 10, 15, 20, 25])
+
+print(np.clip(arr, 10, 20))
+```
+
+Output:
+
+```text
+[10 10 15 20 20]
+```
+
+Values below 10 become 10 and values above 20 become 20.
+
+---
+
+# 17. NumPy for Machine Learning
+
+NumPy is the backbone of most Machine Learning workflows.
+
+---
+
+## Feature Matrix
+
+A Feature Matrix contains input features used for training a model.
+
+```python
+X = np.array([
+    [22, 50000],
+    [25, 60000],
+    [30, 80000]
+])
+
+print(X)
+```
+
+Output:
+
+```text
+[[   22 50000]
+ [   25 60000]
+ [   30 80000]]
+```
+
+Here:
+
+* Column 1 = Age
+* Column 2 = Salary
+
+Shape:
+
+```python
+print(X.shape)
+```
+
+Output:
+
+```text
+(3, 2)
+```
+
+Meaning:
+
+* 3 samples
+* 2 features
+
+---
+
+## Label Vector
+
+A Label Vector contains the target values.
+
+```python
+y = np.array([0, 1, 1])
+
+print(y)
+```
+
+Output:
+
+```text
+[0 1 1]
+```
+
+Here:
+
+* 0 = No
+* 1 = Yes
+
+Shape:
+
+```python
+print(y.shape)
+```
+
+Output:
+
+```text
+(3,)
+```
+
+---
+
+## Vectorization
+
+Vectorization means performing operations on entire arrays without loops.
+
+Traditional Python:
+
+```python
+numbers = [1, 2, 3, 4]
+
+result = []
+
+for num in numbers:
+    result.append(num * 2)
+```
+
+NumPy:
+
+```python
+arr = np.array([1, 2, 3, 4])
+
+result = arr * 2
+
+print(result)
+```
+
+Output:
+
+```text
+[2 4 6 8]
+```
+
+Vectorized operations are faster and cleaner.
+
+---
+
+## Performance Optimization
+
+NumPy is optimized because:
+
+* Core operations are written in C and Fortran.
+* Uses contiguous memory storage.
+* Reduces Python loops.
+* Supports vectorized computations.
+
+Example:
+
+```python
+arr = np.arange(1000000)
+
+result = arr * 2
+```
+
+This operation is significantly faster than using Python loops.
+
+---
+
