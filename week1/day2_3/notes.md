@@ -1,4 +1,4 @@
-## Resources
+# Resources
 
 - GeeksforGeeks – Introduction to NumPy
 # 1. Introduction to NumPy
