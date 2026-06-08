@@ -271,13 +271,12 @@ By the end of Day 6 you should be able to:
 
 ## ✅ Completion Checklist
 
-* [ ] Created line plot
-* [ ] Created bar chart
-* [ ] Created histogram
-* [ ] Created pie chart
-* [ ] Created scatter plot
-* [ ] Created box plot
-* [ ] Used Seaborn
-* [ ] Created heatmap
-* [ ] Completed mini project
-* [ ] Documented observations
+* [x] Created line plot
+* [x] Created bar chart
+* [x] Created histogram
+* [x] Created pie chart
+* [x] Created scatter plot
+* [x] Created box plot
+* [x] Used Seaborn
+* [x] Created heatmap
+
