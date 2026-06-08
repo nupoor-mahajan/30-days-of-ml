@@ -255,8 +255,6 @@ Shows relationships between multiple variables.
 
 ## 📊 Key Learning Outcomes
 
-By the end of Day 6 you should be able to:
-
 * Create line charts
 * Create bar charts
 * Create histograms
