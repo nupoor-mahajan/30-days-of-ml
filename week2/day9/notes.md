@@ -51,7 +51,7 @@ Linear Regression predicts output using a straight-line relationship between inp
 
 ### Prediction Formula
 
-\hat{y}=\beta_1x+\beta_0
+ŷ=β₁x+β₀
 
 Where:
 
