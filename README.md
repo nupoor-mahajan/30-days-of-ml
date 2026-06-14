@@ -43,7 +43,7 @@ This repository documents my progress as I learn Machine Learning from the groun
 
 * [x] Day 8 - Train-Test Split & Data Preparation
 * [x] Day 9 - Linear Regression Theory
-* [ ] Day 10 - Linear Regression Implementation
+* [x] Day 10 - Linear Regression Implementation
 * [ ] Day 11 - Multiple Linear Regression
 * [ ] Day 12 - Logistic Regression Theory
 * [ ] Day 13 - Logistic Regression Implementation
