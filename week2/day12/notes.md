@@ -264,9 +264,9 @@ z = b_0 + b_1x_1 + b_2x_2 + \dots + b_nx_n
 
 Convert the linear output into probability:
 
-[
+$$
 p = \frac{1}{1 + e^{-z}}
-]
+$$
 
 ### 4. Get Probability Output
 
@@ -333,17 +333,17 @@ Accuracy measures how many predictions were correct out of the total predictions
 
 ### Formula
 
-[
+$$
 \text{Accuracy} = \frac{\text{Correct Predictions}}{\text{Total Predictions}}
-]
+$$
 
 ### Example
 
 If the model makes 10 predictions and 8 are correct:
 
-[
+$$
 \text{Accuracy} = \frac{8}{10} = 0.8 = 80%
-]
+$$
 
 ---
 
@@ -415,9 +415,9 @@ Precision tells us:
 
 ### Formula
 
-[
+$$
 \text{Precision} = \frac{TP}{TP + FP}
-]
+$$
 
 Precision becomes important when **false positives** are costly.
 
@@ -431,9 +431,9 @@ Recall tells us:
 
 ### Formula
 
-[
+$$
 \text{Recall} = \frac{TP}{TP + FN}
-]
+$$
 
 Recall becomes important when **missing positive cases** is costly.
 
@@ -445,9 +445,9 @@ F1 Score is the harmonic mean of Precision and Recall.
 
 ### Formula
 
-[
+$$
 F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}
-]
+$$
 
 It is useful when both Precision and Recall are important.
 
