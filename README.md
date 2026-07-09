@@ -47,7 +47,7 @@ This repository documents my progress as I learn Machine Learning from the groun
 * [x] Day 11 - Multiple Linear Regression
 * [x] Day 12 - Logistic Regression Theory
 * [x] Day 13 - Logistic Regression Implementation
-* [ ] Day 14 - ML Project
+* [x] Day 14 - ML Project
 
 ### Week 3: Classification Algorithms
 
