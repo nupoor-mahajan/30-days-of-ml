@@ -161,7 +161,7 @@ sns.histplot(df['G3'], bins=10, kde=True)
 plt.title("Distribution of Final Grade (G3)")
 plt.show()
 ```
-![My Image](distribution of final grade.png)
+![My Image](distribution-of-final-grade.png)
 
 ## 2. Study time vs Final Grade
 
@@ -171,7 +171,7 @@ sns.scatterplot(x=df['studytime'], y=df['G3'])
 plt.title("Study Time vs Final Grade")
 plt.show()
 ```
-![My Image](studytime vs finalgrade.png)
+![My Image](studytime-vs-finalgrade.png)
 ## 3. Absences vs Final Grade
 
 ```python
@@ -180,7 +180,7 @@ sns.scatterplot(x=df['absences'], y=df['G3'])
 plt.title("Absences vs Final Grade")
 plt.show()
 ```
-![My Image](absences vs finalgrade.png)
+![My Image](absences-vs-finalgrade.png)
 ## 4. Correlation Heatmap
 
 ```python
