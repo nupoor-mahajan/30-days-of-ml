@@ -82,8 +82,8 @@ This repository documents my learning path in **Machine Learning, Deep Learning,
 
 ### Week 3: Classification Algorithms
 
-* [ ] Day 15 - K-Nearest Neighbors (KNN)
-* [ ] Day 16 - Decision Trees
+* [x] Day 15 - K-Nearest Neighbors (KNN)
+* [x] Day 16 - Decision Trees
 * [ ] Day 17 - Random Forest
 * [ ] Day 18 - Naive Bayes
 * [ ] Day 19 - Support Vector Machine (SVM)
